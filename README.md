@@ -4,6 +4,8 @@
 
 ![Alt text](./images/image1README.png)
 
+HOW TO USE: Enter the number of characters you would like in your desired password. Check on or off Uppercase, Lowercase, Numbers and Symbols to include or not in you password and submit! You will be provided with a password! 
+
 This project is helping me build a webapp so that I know how to go about creating not just a fully interactive webpage with stylesheet and script but also add functions that I find suitable to solve acceptance criteria. I understand in the future of web developement I will be required to meet everything asked according to the client anyone I work for. This assignment really helped me navigate on my own how to research and apply code to meet requirements whilst keeping the visual design intergrity of the original code.
 
 Along with being tested on understanding of creating a webapp I am adding something valuable to my job seeking tools. Every part of this project is sample code which shows how to do the following:

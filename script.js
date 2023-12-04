@@ -46,7 +46,7 @@ function GeneratePassword () {
 
 }
 
-// Async function to wait for the above value to generate and then copy it on clipboard
+// Async function to wait for the above value to generate and then copy it to clipboard
  async function CopyPassword() {
   if (navigator.clipboard) {
      await navigator.clipboard.writeText(password_el.value);
