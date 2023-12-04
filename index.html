@@ -1,0 +1,88 @@
+<!DOCTYPE html> <!--Existing starter code lines 1 to 9-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <!--I had to alter this code a lot to and should have actually done this on another branch-->
+  <!--A lot of my styles classes and ID's had to be renamed or edited in or out i.e "card", "card-body" and more-->
+  <body>
+    <!--Title-->
+    <div class ="wrapper">
+      <header>
+        <h1>Password Generator</h1>
+      </header>
+    </div>
+
+    <!--Intro-->
+    <div class="card">
+      <div>
+        <h3>Generate a Password</h3>
+      </div>
+
+      <div class="password-wrap"> <!--Existing starter code lines 72 to 78-->
+        <input 
+        type="text" 
+        id="password" 
+        readonly 
+        placeholder="Your Secure Password Here" />
+      </div>
+
+      <div class="generate-button"> <!--I moved this button so that it is above the space where the password will generate this way the modal overlaps it once clicked so the user can follow the next steps-->
+        <!--Nevermind moved the button back. I think everything at the end has to look like the image in the assignment too-->
+        <button id="generate" class="btn">Generate Password</button>
+      </div>
+
+    </div>
+
+    <!--This one is important, I think this is where most of my assignment criteria is acquired.
+    I created a modal which will only show once you click the Generate Password button. Once clicked it 
+    will already have the number of charaters aka length feild filled out from prior prompt. The modal will have checkboxes for 
+    users to uncheck/check as per their needs. Once users click submit a password will be provided below and already copied on to
+    the clipboard with an alert saying so. -->
+
+    <dialog class="modal" id="modal">  
+      <div class="card-body">
+        <label>
+          <span>Password Length:</span> <!--I made the max value 16 characters which should be enought to meet the requirement of 8-->
+          <input type="number" id="length" value="16" /> <!--Doc query, Type: number, linked to const in .js via ID-->
+        </label> 
+        <br> 
+        <h3>Uncheck/Check Your Password Criteria Below!</h3>
+        <br>
+        <Chkbox>
+          <span>Include Uppercase Letters:</span>
+          <input type="checkbox" id="uppercase" checked /> <!--Doc query, Type: Checkboxes, linked to const in .js via ID-->
+        </Chkbox>
+        <br>
+        <Chkbox>
+          <span>Include Lowercase Letters:</span>
+          <input type="checkbox" id="lowercase" checked /> <!--Doc query, Type: Checkboxes, linked to const in .js via ID-->
+        </Chkbox>
+        <br>
+        <Chkbox>
+          <span>Include Numbers:</span>
+          <input type="checkbox" id="numbers" checked /> <!--Doc query, Type: Checkboxes, linked to const in .js via ID-->
+        </Chkbox>
+        <br>
+        <Chkbox>
+          <span>Include Symbols:</span>
+          <input type="checkbox" id="symbols" checked /> <!--Doc query, Type: Checkboxes, linked to const in .js via ID-->
+        </Chkbox>
+      </div>
+      <div id="submit-button"> <!--Popout modal with submit button that also closes the popout-->
+        <button class="submit">Submit</button>
+      </div>
+    </dialog> 
+
+
+    
+
+    <script src="script.js"></script>
+
+  </body>
+</html>

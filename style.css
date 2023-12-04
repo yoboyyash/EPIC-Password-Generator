@@ -1,0 +1,153 @@
+*,  /* -- Existing starter code lines 1 to 56 -- */
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+
+body {
+  font-family: sans-serif;
+  background-color: #f9fbfd;
+}
+
+.wrapper {
+  height: 60%;
+  margin: 0;
+  padding: 8px;
+
+}
+
+header {
+  text-align: center;
+  padding: 10px;
+  padding-top: 0px;
+  color: hsl(206, 17%, 28%);
+}
+
+.card {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 5px;
+  border-width: 1px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
+  color: hsl(206, 17%, 28%);
+  font-size: 18px;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 50px;
+}
+
+.card-body {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 5px;
+  border-width: 1px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
+  color: hsl(206, 17%, 28%);
+  font-size: 18px;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 50px 50px;
+  
+}
+
+/* -- Added some styling to match starter code for the popout created, edited some button style(s) -- */
+.modal {
+  position: absolute;
+  left: 25%;
+  top: 60%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
+  border: none;
+  border-radius: 5px;
+}
+
+.generate-button {
+  padding-top: 25px;
+  text-align: center;
+}
+
+.btn {
+  border: none;
+  background-color: hsl(360, 91%, 36%);
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
+    0px;
+  color: hsl(0, 0%, 100%);
+  display: inline-block;
+  font-size: 22px;
+  line-height: 22px;
+  margin: 16px 16px 16px 20px;
+  padding: 14px 34px;
+  text-align: center;
+  cursor: pointer;
+}
+
+button {
+  cursor: default;
+  background: #c0c7cf;
+}
+
+.password-wrap {
+  padding-top: 10px;
+}
+
+.password-wrap::before {
+  display: inline-block;
+  align-items: center;
+  content: "";
+  border-top: .15rem solid #c0c7cf;
+  width: 44rem;
+  margin: 0;
+  
+}
+
+.password-wrap::after {
+  display: inline-block;
+  align-items: center;
+  content: "";
+  border-top: .15rem solid #c0c7cf;
+  width: 44rem;
+  margin: 0;
+  padding-bottom: 8px;
+}
+
+#password {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  display: block;
+  width: 100%;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 85px;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 2px dashed #c0c7cf;
+  border-radius: 6px;
+  resize: none;
+  overflow: hidden;
+}
+
+/* -- Existing media query -- */
+@media (max-width: 690px) {
+  .btn {
+    font-size: 1rem;
+    margin: 16px 0px 0px 0px;
+    padding: 10px 15px;
+  }
+
+  #password {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .btn {
+    font-size: 0.8rem;
+  }
+}
