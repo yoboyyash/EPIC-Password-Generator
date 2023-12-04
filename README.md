@@ -2,7 +2,7 @@
 
 ## A 16 character random password generator! 
 
-![Alt text]
+![Alt text](./images/image1README.png)
 
 This project is helping me build a webapp so that I know how to go about creating not just a fully interactive webpage with stylesheet and script but also add functions that I find suitable to solve acceptance criteria. I understand in the future of web developement I will be required to meet everything asked according to the client anyone I work for. This assignment really helped me navigate on my own how to research and apply code to meet requirements whilst keeping the visual design intergrity of the original code.
 
@@ -16,9 +16,11 @@ Along with being tested on understanding of creating a webapp I am adding someth
  * Structure code schemantics in a way so you or anyone else can continue working on this project in the future 
 
 ## Visit the Website!
+https://yoboyyash.github.io/EPIC-Password-Generator/
 
 
 ## Visit the Repository!
+https://github.com/yoboyyash/EPIC-Password-Generator
 
 
 ## Found a bug?
